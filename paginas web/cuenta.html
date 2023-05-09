@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/ mancuerna.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../estilos/estilos.css">
+    <title>Mundo Fitness V2.0</title>
+</head>
+<body>
+    <header>
+        <aside class="titulo">Mundo Fitness V2.0 !!</aside>
+            <nav class="barra">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="./../index.html">Home</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="./servicios.html">Nuestros Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./oferta.html">Oferta Mensual</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./soporte.html">Soporte</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="cuenta">
+            <h1 class="titulo2">Crear Cuenta !!</h1>
+            <h2 class="tituloDeFormulario col-sm-12 col-xl-12">Crea una cuenta, completando el siguiente formulario:</h2>
+        <!--Requisitos del formulario-->
+            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded"></form>
+            <label for="Nombre">Nombre:</label> <input type="text" placeholder="Escriba su nombre">
+            <br>
+            <label for="Apellido">Apellido:</label> <input type="text" placeholder="Escriba su apellido">
+            <br>
+            <label for="Numero de telefono">Número de telefono:</label> <input type="text" placeholder="Ingrese su numero">
+            <br>
+            <label for="E-mail">Dirección de correo electronico:</label> <input type="text" placeholder="E-mail">
+            <br>
+            Fecha de nacimiento:<input type="date">
+            <br>
+            <h2 class="tituloDeFormulario col-sm-12 col-xl-12">Seleccione su genero:</h2>
+            <label for="sexo1"></label>hombre<input type="radio" name="sexo" value="hombre"><br>mujer<input type="radio" name="sexo" value="mujer"><br>sin especificar<input type="radio" name="sexo" value="sin especificar" checked>
+            <h2 class="tituloDeFormulario">Nombra tu tipo de cuerpo:</h2> 
+            <!--Opciones del cuerpo-->
+            <label for="Cuerpo1"></label>Ectomorfo<input type="radio" name="cuerpo" value="Ectomorfo"><br>Mesomorfo<input type="radio" name="cuerpo" value="Mesomorfo"><br>Endomorfo<input type="radio" name="cuerpo" value="Endomorfo" checked>
+            <br>            
+            <!--Descripcion del cuerpo-->
+            <h3 class="tituloDeFormulario col-sm-12 col-xl-12" for="">Describe tu cuerpo:</h3>
+            <textarea name="areadetexto" id="" cols="50" rows="10" placeholder="Describe tu cuerpo aqui"></textarea>
+            <br>
+        <!--Descripcion personal-->
+            <h2 class="tituloDeFormulario col-sm-12 col-xl-12">Describete brevemente como eres de activo en tu dia a dia:</h2>
+            <textarea name="areadetexto" id="" cols="50" rows="10" placeholder="Describete aqui"></textarea>
+            <br>
+            <h2 class="tituloDeFormulario col-sm-12 col-xl-12">Detalle como era su dieta:</h2>
+            <textarea name="areadetexto" id="" cols="50" rows="10" placeholder="Detalle aqui"></textarea>
+            <br>
+        <!--Contraseña del usuario-->
+            <label for="Contraseña">Ingrese una contraseña:</label><input type="password" id="Contraseña">
+            <br>
+            <label for="confirmar contraseña">Confirme su contraseña:</label><input type="password" id="Confirmar contraseña">
+            <br>
+        <!--botones de foßrmulario-->
+            <input type="submit" value="enviar">
+            <input type="reset" value="borrar">
+            <br>
+        </main>
+        <footer class="col-sm-12 col-xl-12">
+            <h4>Derechos de autor © Mundo Fitness</h4>
+                <h2>Nuestro contacto:</h2>
+                <a id="redes" href="https://www.instagram.com/andres755c/" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+                <a id="redes" href="" id="redesSociales""><i class="fa-brands fa-twitter"></i></a>
+                <a id="redes" href="" id="redesSociales"><i class="fa-brands fa-facebook"></i></a>
+                <a id="redes" href="" id="redesSociales"><i class="fa-brands fa-discord"></i></a>
+                <a id="redes" href="" id="redesSociales"><i class="fa-brands fa-youtube"></i></a>
+                <a id="redes" href=""><i class="fa-solid fa-envelope"></i></a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    </body>
+</body>
+</html>
